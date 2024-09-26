@@ -27,14 +27,13 @@ This form was developed as part of a lesson on **HTML Forms**, which play a crit
 ## How to Run the Project
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/dj-booking-form.git
+    git clone https://github.com/wanderlustelle/dj-booking-form.git
     ```
 2. Open the `index.html` file in your favorite browser.
 3. The form will be live, ready for use!
 
 ## Live Demo
-Check out the live form [here](https://your-username.github.io/dj-booking-form).
+Check out the live form [here](https://wanderlustelle.io/dj-booking-form).
 
 ---
 
-### Feel free to tweak any part of this!

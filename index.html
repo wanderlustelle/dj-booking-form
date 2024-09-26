@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ Booking Contact Form</title>
+
+    <!--
+    =============================
+    ||  GOOGLE FONTS & STYLES  ||
+    =============================
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>DJ Booking Contact</h1>
+
+      <!--
+      ================================
+      ||  CONTACT FORM SECTION ||
+      ================================
+      Form for contact and booking inquiries
+      -->
+      <form>
+        <!-- Name input -->
+        <div>
+          <label for="name">Full Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <!-- Email input -->
+        <div>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <!-- Message input -->
+        <div>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="How can I help you?"
+            maxlength="300"
+            required
+          ></textarea>
+        </div>
+        <h2>Inquiry Type</h2>
+        <div>
+          <select name="inquiry">
+            <option value="booking">Booking Inquiry</option>
+            <option value="sponsor">Sponsor/Brand Collaboration</option>
+            <option value="speaker">Speaking Opportunity</option>
+            <option value="media">Media/Press Inquiry</option>
+            <option value="general">General Inquiry</option>
+            <option value="partnership">Partnership Opportunity</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <!--
+        ============================
+        || RADIO BUTTONS SECTION ||
+        ============================
+        For paid, barter, or gifted collaboration
+        -->
+        <h2>Booking Type</h2>
+        <div>
+          <input id="paid" name="booking" type="radio" value="paid" required />
+          <label for="paid">Paid</label>
+        
+          <input id="barter" name="booking" type="radio" value="barter" />
+          <label for="barter">Barter</label>
+        
+          <input id="gifted" name="booking" type="radio" value="gifted" />
+          <label for="gifted">Gifted Collaboration</label>
+        
+          <input id="negotiable" name="booking" type="radio" value="negotiable" />
+          <label for="negotiable">Negotiable</label>
+        
+          <input id="other" name="booking" type="radio" value="other" />
+          <label for="other">Other</label>
+        </div>
+        
+        <!--
+        =============================
+        ||  CHECKBOXES SECTION ||
+        =============================
+        Opportunities: Speaker, Sponsor, etc.
+        -->
+        <h2>Opportunities</h2>
+<ul>
+  <li>
+    <input id="dj-event" name="opportunities" type="checkbox" value="dj-event" />
+    <label for="dj-event">DJ Performance (Event)</label>
+  </li>
+  <li>
+    <input id="dj-festival" name="opportunities" type="checkbox" value="dj-festival" />
+    <label for="dj-festival">DJ Performance (Festival)</label>
+  </li>
+  <li>
+    <input id="speaker" name="opportunities" type="checkbox" value="speaker" />
+    <label for="speaker">Speaker Engagement</label>
+  </li>
+  <li>
+    <input id="brand-collab" name="opportunities" type="checkbox" value="brand-collab" />
+    <label for="brand-collab">Brand Collaboration / Sponsorship</label>
+  </li>
+  <li>
+    <input id="workshop" name="opportunities" type="checkbox" value="workshop" />
+    <label for="workshop">Workshop Leader</label>
+  </li>
+  <li>
+    <input id="guest" name="opportunities" type="checkbox" value="guest" />
+    <label for="guest">Guest Appearance</label>
+  </li>
+</ul>
+
+
+        <!-- Submit and Reset buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>

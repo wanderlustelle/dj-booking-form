@@ -1,0 +1,144 @@
+/* 
+=======================
+||   BASE STYLES   ||
+=======================
+*/
+
+/* Background gradient */
+body {
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #140D4F;
+    padding: 20px;
+  }
+  
+  /* Main form container */
+  main {
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form headings */
+  h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #140D4F;
+  }
+  
+  /* Input, textarea, and select */
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* 
+  =======================
+  ||   CHECKBOXES LI   ||
+  =======================
+  */
+  ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0;            /* Removes default padding */
+  }
+  
+  li {
+    margin-bottom: 10px;    /* Adds space between each list item */
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;     /* Adds space between checkbox and label */
+  }
+  
+  label {
+    font-family: 'Poppins', sans-serif; /* Example font styling */
+    font-size: 1rem;
+  }
+  
+  /* Radio buttons */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;     /* Adds space between radio and label */
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #140D4F;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2892D7;
+  }
+  
+  /* 
+  =========================
+  ||   MEDIA QUERIES   ||
+  =========================
+  */
+  
+  /* 
+  For tablets or larger devices
+  */
+  @media (min-width: 768px) {
+    body {
+      padding: 50px;
+    }
+  
+    main {
+      padding: 70px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      padding: 12px 30px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* 
+  For desktops or large devices
+  */
+  @media (min-width: 1024px) {
+    main {
+      max-width: 800px;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    button {
+      padding: 14px 35px;
+      font-size: 1.3rem;
+    }
+  }
+  
